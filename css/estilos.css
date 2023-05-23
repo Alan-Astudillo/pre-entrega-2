@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,500;0,700;0,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+body {
+  background-color: #1C3973; }
+
+.productos-destacados .caja-1 div, .productos-destacados .caja-2 div, .productos-destacados .caja-3 div, .productos-destacados .caja-4 div, .productos-destacados .caja-5 div, .productos-destacados .caja-6 div, .producto-raquetas .producto-raquetas-card div, .producto-calzado .producto-calzado-card div, .producto-indumentaria .producto-indumentaria-card div {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 4px rgba(255, 255, 255, 0.589);
+  text-align: center; }
+
+.productos-destacados div div button a, .producto-raquetas .producto-raquetas-card div button a, .producto-calzado .producto-calzado-card div button a, .producto-indumentaria .producto-indumentaria-card div button a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #aeaee0;
+  color: #fbfbfb;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .productos-destacados div div button a:before, .producto-raquetas .producto-raquetas-card div button a:before, .producto-calzado .producto-calzado-card div button a:before, .producto-indumentaria .producto-indumentaria-card div button a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #e1cbcb;
+    z-index: -1;
+    transition: left 0.3s ease; }
+  .productos-destacados div div button a:hover:before, .producto-raquetas .producto-raquetas-card div button a:hover:before, .producto-calzado .producto-calzado-card div button a:hover:before, .producto-indumentaria .producto-indumentaria-card div button a:hover:before {
+    left: 0; }
+
+header {
+  width: 100%;
+  background-color: #1C3973;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 5px 20px aliceblue; }
+
+header div a {
+  width: 100%; }
+
+header div a img {
+  width: 80%;
+  box-shadow: 10px; }
+
+/*------hero-------*/
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/carouselyonex--------1.webp); }
+
+.hero .hero-carousel {
+  width: 85%;
+  text-align: center; }
+
+.hero h2 {
+  color: black; }
+
+.hero p {
+  color: black; }
+
+/*------main-------*/
+.productos-destacados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis"; }
+
+.productos-destacados div div p {
+  font-size: 20px;
+  color: aliceblue; }
+
+.productos-destacados .caja-1 div {
+  transition: ease; }
+  .productos-destacados .caja-1 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.productos-destacados div img {
+  width: 100%; }
+
+.productos-destacados .caja-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-2 div {
+  transition: ease; }
+  .productos-destacados .caja-2 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.productos-destacados .caja-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-3 div {
+  transition: ease; }
+  .productos-destacados .caja-3 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.productos-destacados .caja-4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-4 div {
+  transition: ease; }
+  .productos-destacados .caja-4 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.productos-destacados .caja-5 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-5 div {
+  transition: ease; }
+  .productos-destacados .caja-5 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.productos-destacados .caja-6 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos-destacados .caja-6 div {
+  transition: ease; }
+  .productos-destacados .caja-6 div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.caja-1 {
+  grid-area: uno; }
+
+.caja-2 {
+  grid-area: dos; }
+
+.caja-3 {
+  grid-area: tres; }
+
+.caja-4 {
+  grid-area: cuatro; }
+
+.caja-5 {
+  grid-area: cinco; }
+
+.caja-6 {
+  grid-area: seis; }
+
+/*------aside-----*/
+aside {
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+aside section {
+  justify-content: space-around; }
+
+aside h3 {
+  color: aliceblue;
+  font-size: 50px; }
+
+/*------raquetas-------*/
+.producto-raquetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.producto-raquetas-card {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.producto-raquetas .producto-raquetas-card {
+  width: 100%;
+  height: 100%; }
+
+.producto-raquetas .producto-raquetas-card div {
+  transition: ease; }
+  .producto-raquetas .producto-raquetas-card div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.producto-raquetas .producto-raquetas-card div img {
+  width: 100%; }
+
+.producto-raquetas .producto-raquetas-card div p {
+  color: aliceblue;
+  font-size: 20px; }
+
+/*----calzado----*/
+.producto-calzado {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.producto-calzado .producto-calzado-card div {
+  transition: ease; }
+  .producto-calzado .producto-calzado-card div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.producto-calzado div img {
+  width: 100%; }
+
+.producto-calzado .producto-calzado-card {
+  width: 100%;
+  height: 100%; }
+
+.producto-calzado .producto-calzado-card div p {
+  color: aliceblue;
+  font-size: 20px; }
+
+.producto-calzado-card {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*----indumentaria------*/
+.producto-indumentaria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.producto-indumentaria .producto-indumentaria-card div {
+  transition: ease; }
+  .producto-indumentaria .producto-indumentaria-card div:hover {
+    background-color: rgba(245, 247, 245, 0.304); }
+
+.producto-indumentaria img {
+  width: 100%; }
+
+.producto-indumentaria .producto-indumentaria-card {
+  width: 100%;
+  height: 100%; }
+
+.producto-indumentaria-card {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.producto-indumentaria .producto-indumentaria-card div p {
+  color: aliceblue;
+  font-size: 20px; }
+
+/*------contacto--------*/
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contacto .contacto-card {
+  width: 300px;
+  height: 450px; }
+
+.contacto h2 {
+  font-size: 50px;
+  color: aliceblue; }
+
+iframe {
+  padding: 50px; }
+
+footer {
+  background-color: #162c5a;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start; }
+
+footer section div ul {
+  display: flex;
+  margin: 10px; }
+
+footer div ul li {
+  margin: 20px; }
+
+footer div ul li a {
+  color: aliceblue;
+  font-weight: 500; }
+
+@media screen and (max-width: 840px) {
+  .productos-destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis"; } }
+
+@media screen and (max-width: 600px) {
+  .productos-destacados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
+  .productos-destacados {
+    justify-content: center; }
+  .enlaces {
+    display: none; }
+  aside {
+    display: none; }
+  footer {
+    background-color: #162c5a;
+    height: 200px;
+    display: flex;
+    flex-direction: column; } }
+
+/*-----raquetas------*/
+@media screen and (max-width: 840px) {
+  .producto-raquetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; } }
+
+@media screen and (max-width: 570px) {
+  .producto-raquetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .enlaces {
+    display: none; } }
+
+/*-----calzado-----*/
+@media screen and (max-width: 840px) {
+  .producto-calzado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .enlaces {
+    display: none; } }
+
+@media screen and (max-width: 570px) {
+  .producto-calzado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .enlaces {
+    display: none; } }
+
+/*----indumentaria----*/
+@media screen and (max-width: 840px) {
+  .producto-indumentaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .enlaces {
+    display: none; } }
+
+@media screen and (max-width: 570px) {
+  .producto-indumentaria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .enlaces {
+    display: none; } }
+
+/*----contacto-----*/
+@media screen and (max-width: 800px) {
+  .enlaces {
+    display: none; } }
+
+@media screen and (max-width: 700px) {
+  .formulario {
+    display: flex;
+    flex-direction: column; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contacto .contacto-card {
+    width: 300px;
+    height: 450px; }
+  .contacto h2 {
+    font-size: 50px;
+    color: aliceblue; }
+  iframe {
+    padding: 50px; } }

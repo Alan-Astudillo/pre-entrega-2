@@ -1,0 +1,21 @@
+footer {
+    background-color: #162c5a;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer section div ul {
+    display: flex;
+    margin: 10px;
+}
+
+footer div ul li {
+    margin: 20px;
+}
+
+footer div ul li a {
+    color: aliceblue;
+    font-weight: 500;
+}

@@ -1,0 +1,186 @@
+@media screen and (max-width:840px) {
+    .productos-destacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-template-areas:
+            "uno dos"
+            "tres cuatro"
+            "cinco seis"
+        ;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .productos-destacados {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+        ;
+    }
+
+    .productos-destacados {
+        justify-content: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        background-color: #162c5a;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*-----raquetas------*/
+@media screen and (max-width:840px) {
+    .producto-raquetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .producto-raquetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+}
+
+/*-----calzado-----*/
+@media screen and (max-width:840px) {
+    .producto-calzado {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .producto-calzado {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+}
+
+/*----indumentaria----*/
+@media screen and (max-width:840px) {
+    .producto-indumentaria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .producto-indumentaria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .enlaces {
+        display: none;
+    }
+}
+
+/*----contacto-----*/
+@media screen and (max-width:800px) {
+    .enlaces {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:700px) {
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto .contacto-card {
+        width: 300px;
+        height: 450px;
+    }
+
+    .contacto h2 {
+        font-size: 50px;
+        color: aliceblue;
+    }
+
+    iframe {
+        padding: 50px;
+    }
+
+
+}
