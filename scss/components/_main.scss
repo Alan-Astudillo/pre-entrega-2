@@ -21,6 +21,13 @@
 }
 
 /*------main-------*/
+.texto-productos p{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 4px cornsilk;
+    padding: 10px;
+}
 .productos-destacados {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -192,6 +199,25 @@ aside h3 {
 }
 
 /*------raquetas-------*/
+.hero-raquetas {
+    display: flex;
+    width: 100%;
+    background-image: url(../img/headradical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-raquetas p {
+    display:flex ;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    color: aliceblue;
+    width: 700px;
+}
+.hero-raquetas iframe {
+    width: 800px;
+}
 .producto-raquetas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -238,6 +264,26 @@ aside h3 {
 }
 
 /*----calzado----*/
+.hero-calzado{
+    display: flex;
+    width: 100%;
+    background-image: url(../img/zapatillasadidascarrusel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.hero-calzado p{
+    display:flex ;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(30, 23, 23);
+    width: 700px;
+    font-weight: 700;
+}
+.hero-calzado iframe{
+}
 .producto-calzado {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -283,6 +329,27 @@ aside h3 {
 }
 
 /*----indumentaria------*/
+.hero-indumentaria{
+    display: flex;
+    width: 100%;
+    background-image: url(../img/nikefotogrande.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.hero-indumentaria p{
+    display:flex ;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    width: 700px;
+    font-weight: 700;
+}
+.hero-indumentaria iframe{
+
+}
 .producto-indumentaria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -347,6 +414,9 @@ aside h3 {
 .contacto h2 {
     font-size: 50px;
     color: aliceblue;
+}
+.form-floating{
+    margin: 10px;
 }
 
 iframe {

@@ -12,6 +12,11 @@
             "cinco seis"
         ;
     }
+
+    footer {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -36,20 +41,26 @@
         justify-content: center;
     }
 
-    .enlaces {
-        display: none;
-    }
-
     aside {
         display: none;
     }
 
-    footer {
-        background-color: #162c5a;
-        height: 200px;
+    .enlances {
         display: flex;
-        flex-direction: column;
+        width: 100%;
     }
+
+    .enlaces div ul {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconos {
+        text-align: center;
+    }
+
 }
 
 /*-----raquetas------*/
@@ -63,6 +74,13 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    .hero-raquetas p{
+        width: 100%;
+        padding: 20px;
+    }
+    .hero-raquetas iframe{
+        display: none;
+    }
 }
 
 @media screen and (max-width:570px) {
@@ -76,9 +94,7 @@
         text-align: center;
     }
 
-    .enlaces {
-        display: none;
-    }
+
 }
 
 /*-----calzado-----*/
@@ -92,10 +108,15 @@
         margin-bottom: 20px;
         text-align: center;
     }
-
-    .enlaces {
+    .hero-calzado p{
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+    }
+    .hero-calzado iframe{
         display: none;
     }
+
 }
 
 @media screen and (max-width:570px) {
@@ -109,9 +130,7 @@
         text-align: center;
     }
 
-    .enlaces {
-        display: none;
-    }
+
 }
 
 /*----indumentaria----*/
@@ -126,7 +145,14 @@
         text-align: center;
     }
 
-    .enlaces {
+}
+@media screen and (max-width:700px){
+    .hero-indumentaria p{
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+    }
+    .hero-indumentaria iframe{
         display: none;
     }
 }
@@ -142,19 +168,11 @@
         text-align: center;
     }
 
-    .enlaces {
-        display: none;
-    }
+
 }
 
 /*----contacto-----*/
-@media screen and (max-width:800px) {
-    .enlaces {
-        display: none;
-    }
-
-
-}
+@media screen and (max-width:800px) {}
 
 @media screen and (max-width:700px) {
     .formulario {

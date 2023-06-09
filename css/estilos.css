@@ -14,6 +14,13 @@ ul {
 body {
   background-color: #1C3973; }
 
+.iconos {
+  padding: 5px; }
+
+.iconos div a img {
+  width: 80px;
+  height: 80px; }
+
 .productos-destacados .caja-1 div, .productos-destacados .caja-2 div, .productos-destacados .caja-3 div, .productos-destacados .caja-4 div, .productos-destacados .caja-5 div, .productos-destacados .caja-6 div, .producto-raquetas .producto-raquetas-card div, .producto-calzado .producto-calzado-card div, .producto-indumentaria .producto-indumentaria-card div {
   width: 250px;
   height: 350px;
@@ -84,6 +91,13 @@ header div a img {
   color: black; }
 
 /*------main-------*/
+.texto-productos p {
+  font-size: 40px;
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 4px cornsilk;
+  padding: 10px; }
+
 .productos-destacados {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -206,6 +220,25 @@ aside h3 {
   font-size: 50px; }
 
 /*------raquetas-------*/
+.hero-raquetas {
+  display: flex;
+  width: 100%;
+  background-image: url(../img/headradical.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-raquetas p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  color: aliceblue;
+  width: 700px; }
+
+.hero-raquetas iframe {
+  width: 800px; }
+
 .producto-raquetas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -237,6 +270,24 @@ aside h3 {
   font-size: 20px; }
 
 /*----calzado----*/
+.hero-calzado {
+  display: flex;
+  width: 100%;
+  background-image: url(../img/zapatillasadidascarrusel.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; }
+
+.hero-calzado p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  color: #1e1717;
+  width: 700px;
+  font-weight: 700; }
+
 .producto-calzado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -268,6 +319,24 @@ aside h3 {
   align-items: center; }
 
 /*----indumentaria------*/
+.hero-indumentaria {
+  display: flex;
+  width: 100%;
+  background-image: url(../img/nikefotogrande.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; }
+
+.hero-indumentaria p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  width: 700px;
+  font-weight: 700; }
+
 .producto-indumentaria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -317,22 +386,30 @@ aside h3 {
   font-size: 50px;
   color: aliceblue; }
 
+.form-floating {
+  margin: 10px; }
+
 iframe {
   padding: 50px; }
 
 footer {
   background-color: #162c5a;
-  height: 200px;
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: start; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 footer section div ul {
   display: flex;
-  margin: 10px; }
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  padding-right: 2rem; }
 
 footer div ul li {
-  margin: 20px; }
+  margin: 10px; }
 
 footer div ul li a {
   color: aliceblue;
@@ -346,7 +423,9 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    grid-template-areas: "uno dos" "tres cuatro" "cinco seis"; } }
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis"; }
+  footer {
+    flex-direction: column; } }
 
 @media screen and (max-width: 600px) {
   .productos-destacados {
@@ -359,15 +438,18 @@ footer div ul li a {
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
   .productos-destacados {
     justify-content: center; }
-  .enlaces {
-    display: none; }
   aside {
     display: none; }
-  footer {
-    background-color: #162c5a;
-    height: 200px;
+  .enlances {
     display: flex;
-    flex-direction: column; } }
+    width: 100%; }
+  .enlaces div ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+  .iconos {
+    text-align: center; } }
 
 /*-----raquetas------*/
 @media screen and (max-width: 840px) {
@@ -378,7 +460,12 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center; } }
+    text-align: center; }
+  .hero-raquetas p {
+    width: 100%;
+    padding: 20px; }
+  .hero-raquetas iframe {
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .producto-raquetas {
@@ -388,9 +475,7 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center; }
-  .enlaces {
-    display: none; } }
+    text-align: center; } }
 
 /*-----calzado-----*/
 @media screen and (max-width: 840px) {
@@ -402,7 +487,11 @@ footer div ul li a {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center; }
-  .enlaces {
+  .hero-calzado p {
+    width: 100%;
+    padding: 20px;
+    justify-content: center; }
+  .hero-calzado iframe {
     display: none; } }
 
 @media screen and (max-width: 570px) {
@@ -413,9 +502,7 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center; }
-  .enlaces {
-    display: none; } }
+    text-align: center; } }
 
 /*----indumentaria----*/
 @media screen and (max-width: 840px) {
@@ -426,8 +513,14 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center; }
-  .enlaces {
+    text-align: center; } }
+
+@media screen and (max-width: 700px) {
+  .hero-indumentaria p {
+    width: 100%;
+    padding: 20px;
+    justify-content: center; }
+  .hero-indumentaria iframe {
     display: none; } }
 
 @media screen and (max-width: 570px) {
@@ -438,15 +531,9 @@ footer div ul li a {
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center; }
-  .enlaces {
-    display: none; } }
+    text-align: center; } }
 
 /*----contacto-----*/
-@media screen and (max-width: 800px) {
-  .enlaces {
-    display: none; } }
-
 @media screen and (max-width: 700px) {
   .formulario {
     display: flex;
